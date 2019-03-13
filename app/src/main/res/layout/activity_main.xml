@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bitmap"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true">
+
+    <EditText
+        android:drawableLeft="@mipmap/log_icon_phone_default_xxhdpi"
+        android:id="@+id/edName"
+        android:textColor="#fff"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:background="@drawable/edit_bottom_line"
+        android:layout_width="@dimen/dp_280"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_130"
+        android:hint="手机号"
+        android:inputType="phone"
+        android:padding="@dimen/dp_10"
+        android:drawablePadding="15dp"
+        android:textColorHint="#ede3e3"
+        android:textSize="@dimen/sp_16" />
+    <View
+        android:layout_below="@id/edName"
+        android:layout_width="@dimen/dp_400"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_40"
+        android:layout_height="1dp"
+        android:background="#484479"></View>
+    <EditText
+        android:textColor="#fff"
+        android:id="@+id/edPwd"
+        android:background="@drawable/edit_bottom_line"
+        android:layout_below="@id/edName"
+        android:drawableLeft="@mipmap/log_icon_lock_default_xxhdpi"
+        android:layout_width="@dimen/dp_240"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:drawablePadding="@dimen/dp_10"
+        android:hint="登录密码"
+        android:inputType="numberPassword"
+        android:paddingLeft="@dimen/dp_15"
+        android:padding="@dimen/dp_10"
+        android:textColorHint="#ede3e3"
+        android:textSize="@dimen/sp_16" />
+
+    <ImageView
+        android:id="@+id/is_eyes"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_12"
+        android:layout_above="@id/viewone"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_2"
+        android:layout_marginRight="@dimen/dp_40"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:layout_toRightOf="@id/edPwd"
+        android:background="@mipmap/log_icon_eye_default_xxhdpi" />
+    <View
+        android:id="@+id/viewone"
+        android:layout_below="@id/edPwd"
+        android:layout_width="@dimen/dp_400"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_40"
+        android:layout_height="@dimen/dp_1"
+        android:background="#484479"></View>
+
+    <TextView
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edPwd"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="64dp"
+        android:background="@null"
+        android:text="快速注册"
+        android:textColor="#ede3e3"
+        android:textSize="@dimen/sp_12" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="@dimen/dp_280"
+        android:layout_height="@dimen/dp_40"
+        android:layout_below="@id/btnRegister"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="@dimen/dp_130"
+        android:layout_marginRight="@dimen/dp_40"
+        android:background="@drawable/shape"
+        android:text="登录"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="#f1e0e6"
+        />
+   <TextView
+       android:layout_width="@dimen/dp_100"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/btnLogin"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="@dimen/dp_40"
+       android:text="第三方快速登录"
+       android:textColor="#545353"/>
+    <ImageView
+        android:id="@+id/btnWei"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:src="@mipmap/log_icon_weixin_default_xxhdpi"
+        android:layout_below="@+id/btnLogin"
+        android:layout_marginTop="@dimen/dp_60"
+        android:layout_centerHorizontal="true"
+
+
+        />
+
+</RelativeLayout>

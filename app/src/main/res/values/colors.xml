@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorWhite">#fff</color>
+    <color name="dengluanniu">#ea7878</color>
+    <color name="gray">#CCCCCC</color>
+    <color name="mian_textview_shape">#ededed</color>
+    <color name="text_color_six">#666666</color>
+    <color name="software_textColor_selected">#FF1C94EA</color>
+    <color name="software_textColor_unselected">#FFDCE0DF</color>
+    <drawable name="compare_data_text1">#FFFFFF</drawable>
+
+    <color name="text_color_touming">#00000000</color>
+</resources>
